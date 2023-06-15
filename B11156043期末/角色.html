@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>核心危機 -Final Fantasy VII</title>
+	<style>
+	    header .navbar{
+                color: black;
+                font-size: 24px;
+                padding-left: 45px;
+                padding-right: 45px;
+                text-decoration: none;
+                align-items: center;
+            }
+    header .navbar a:hover{
+                color: black;
+                font-size: 28px;
+                margin-left: 10px;
+                transform: 2s;
+                background-color: gray;
+                padding: 15px 10px 15px 10px;
+            }
+    #menu-bar{
+            font-size: 25px;
+            cursor: pointer;
+            color: #7b7c7a;
+            border: 1px solid #7b7c7a;
+            border-radius: 5px;
+            padding: 8px;
+            display: none;
+            }
+    @media(max-width:600px){
+            #menu-bar{
+                display: initial;
+                position: absolute;
+                right: 10px;
+                top:20px;
+            }
+            header .navbar{
+                position: absolute;
+                top: 70px;left: 0;right: 0;
+                background-color: rgb(211, 211, 115);
+                border-top: 3px solid gray;
+                clip-path:polygon(0 0,100% 0,100% 0,0 0);
+            }
+            header .navbar.active{
+                clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+                padding: 10px;
+            }
+            header .navbar a{
+                display: block;
+                font-size: 24px;
+                font-weight: normal;
+                margin: 10px; padding: 6px;
+                color: #c09002;
+                border-left: 3px solid gray;
+            }
+            body {
+            background-color: #f2f2f2;
+            background-image: url("./back.jpg"); /* 替換成您的背景圖片檔案路徑 */
+            width: 800px;
+            height: 1000px;
+            }
+        }
+    #menu {
+    background-color: rgba(51, 51, 51, 0.6);
+    color: #ffffff96;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 微軟正黑體;
+    }
+    #menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    }
+
+    #menu li {
+    margin-right: 160px;
+    }
+
+    #menu li:last-child {
+    margin-right: 0;
+    }
+
+    #menu a {
+    color: #ffffff;
+    text-decoration: none;
+    }
+	body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    }
+
+    #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 100vh;
+    }
+	#character {
+    display: flex;
+    align-items: flex-start;
+    max-width: 150px;
+    margin: 20px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    }
+
+    #character img {
+    width: 10px;
+    height: 10px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    margin-right: 20px;
+    }
+
+    #character-info {
+    padding: 150px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    }
+    .character {
+    width: 200px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    }
+
+    .character img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+	.box {
+		background-color: rgba(128, 128, 128, 0.8);
+		border-radius: 10px;
+		padding: 50px;
+		color: #fff;
+		max-width: 1500px;
+		}
+    #character2 img{
+        height: 1300px;
+        width: 1200px;
+    }
+	</style>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <script src="script.js"></script>
+        <nav id="menu" class="navbar">
+            <ul>
+            <li><a href="B11156043期末.html">首頁</a></li>
+            <li><a href="劇情.html">劇情簡介</a></li>
+            <li><a href="角色.html">主要角色介紹</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div id="container">
+		<div class="character" onclick="showCharacterIntro('character1')">
+        <a href="#zack">
+            <img src="zack2.jpg" alt="Character 1">
+        </a>
+		<h3>扎克斯·菲爾</h3>
+		</div>
+	
+		<div class="character" onclick="showCharacterIntro('character2')">
+        <a href="#cl">
+            <img src="cloud.jpg" alt="Character 2">
+        </a>
+		<h3>克勞德·斯特萊夫</h3>
+		</div>
+
+        <div class="character" onclick="showCharacterIntro('character2')">
+        <a href="#cl">
+            <img src="cloud.jpg" alt="Character 2">
+        </a>
+        <h3>艾莉絲·蓋恩茲博羅</h3>
+        </div>
+	
+		<!-- Add more character elements as needed -->
+	</div>
+	<div id="character1" style="display: none;">
+		<img src="zack3.png" alt="Character 1">
+		<div id="character-info">
+		<div class="box" id="zack">
+		<h1>扎克斯·菲爾</h1>
+		<h1>ザックス・フエア</h1>
+        <a style="color: rgba(16, 27, 134, 0.473);font-size: 0.75cm;">
+        擁抱夢想吧，而且，無論何時，都不要捨棄戰士的榮耀！</a><br>
+        <a style="font-size: 0.55cm;color: rgba(16, 27, 134, 0.473)">
+        夢を抱きしめろ、そして、どんな時でも、ソルジャの夸りを手放すな！</a>
+        
+        </a>
+		<h2>基本資料</h2>
+		<p>
+			身高：185cm<br>
+			年齡：16歲(戰死時為23歲)<br>
+			生日：不明<br>
+			出生地區：貢加加村<br>
+			神羅兵等級：1st特種兵<br>
+		</p>
+		<h2>簡介</h2>
+		<p>
+			<a>　　　</a>扎克斯雖然在本傳中已經死亡，但在閃回中出場了數次，是解開克勞德的記憶之謎的重要人物。在前傳《核心危機：最終幻想7》中，他成為了主角。<br>
+			<a>　</a>扎克斯是一名神羅戰士(故事剛開始時是2nd，後升為1st)，也是克勞德·斯特萊夫的摯友。<br>
+			<a>　</a>他穿著神羅戰士的鎧甲，留著黑色的刺刺頭，身材高大，性格活潑開朗，夢想是成為像薩菲羅斯這樣的英雄，對還是小兵的克勞德給予了很多鼓勵。<br>
+			<a>　</a>因為他的好動性格和三分鐘熱度，安吉爾·休雷給他取了個「小狗扎克斯」的綽號。<br>
+		</p>
+        <h2>武器</h2>
+        <p>
+            <a style="font-weight: bold;">毀滅劍（Buster Sword）</a><br>
+            <a>　　</a>札克斯在故事後期武器，是由安吉爾死前所託付繼承的。外型呈斬首大刀，刀身有兩個中空的洞，沒有護手。現為札克斯的遺物（交給克勞德）。<br>
+            <a>　　</a>另譯為「破壞劍」<br>
+        </p>
+        <h2>外表和性格</h2>
+        <p>
+            <a>　　　</a>《核心危機》的主角。因最初時是「神羅集團」的神羅戰士（Soldier）2nd，所以穿著紫色的戰士裝。特徵是黑色短髮，中分的瀏海，藍色瞳孔，<br>
+            <a>　</a>左耳鑲有耳環，身材結實，在後期髮型會改留為前方蓄著一根長瀏海的模樣，頭髮稍長，而左臉頰還多了道十字傷疤。<br>
+            <a>　</a>在故事途中因受負責人拉薩德（ラザード）認可而升級成為1st（衣裝改為黑色）。<br>
+            <a>　</a>性格十分好動，活潑，善於與他人相處，一心想成大事，2nd時還曾說自己的夢想並不是要升級成為1st，而是想成為一個像賽菲羅斯的「英雄」。<br>
+            <a>　</a>此外還有著「路見不平，拔刀相助」的習慣。對性格內向、還是小兵的克勞德不時給予鼓勵。<br>
+        </p>
+		</div>
+		</div>
+	</div>
+	
+    <div id="character2" style="display: none;">
+		<img src="cloud2.png" alt="Character 2">
+		<div id="character-info">
+		<div class="box" id="cl">
+            <h1>克勞德·斯特萊夫</h1>
+            <h1>クラウド・ストライフ</h1>
+            <a style="color: rgba(16, 27, 134, 0.473);font-size: 0.75cm;">
+            我，是你活著的證明</a><br>
+            <a style="font-size: 0.55cm;color: rgba(16, 27, 134, 0.473)">
+            私はあなたが生きている証です。</a>
+            
+            </a>
+            <h2>基本資料</h2>
+            <p>
+                身高：173cm<br>
+                年齡：16歲(核心危機)、21歲(最終幻想VII)、23歲(降臨之子)<br>
+                生日：8月11日<br>
+                出生地區：尼布爾海姆<br>
+                神羅兵等級：1st特種兵(自稱)<br>
+            </p>
+            <h2>簡介</h2>
+            <p>
+                <a>　　　</a>最終幻想7本傳以及CG電影《最終幻想：降臨之子》的主角，《核心危機：最終幻想7》的主要配角。<br>
+                <a>　</a>自稱是前1st Rank的神羅戰士，在本傳中被青梅竹馬蒂法·洛克哈特所僱傭加入了反對壟斷企業「神羅」<br>
+                <a>　</a>的生態恐怖主義組織「雪崩」，經過一系列的冒險後打敗了想要召喚隕石衝擊星球的薩菲羅斯，<br>
+                <a>　</a>拯救了世界。性格冷淡，口頭禪是「沒興趣」。在FF7本篇中的標誌武器是「毀滅劍」，在降臨之子中的則是「六式」。<br>
+            </p>
+            <h2>武器</h2>
+            <p>
+                <a style="font-weight: bold;">毀滅劍（Buster Sword）</a><br>
+                <a>　　</a>現為札克斯的遺物（交給克勞德）。克勞德故事初期配備的武器。<br>
+                <a>　　</a>外型呈斬首大刀，刀身有兩個中空的洞，能裝備二顆魔晶石，沒有護手。為札克斯的遺物。<br>
+                <a>　　</a>《FFVII AC》故事開始時插在札克斯死去的地方，最後被重修完好，並移到艾莉絲教堂的水池上方處。<br>
+                <a>　　</a>另譯為「破壞劍」<br>
+                <a style="font-weight: bold;">合體劍（Buster Sword）</a><br>
+                <a>　　</a>是克勞德後期所使用的組合武器，由六把分別為劍與刀所組合而成，可依需要分離或組合。<br>
+                <a>　　</a>當六把刀劍組合成完全體後便能施展出武器自帶的最強魔法「諸神祝福」。<br>
+                <a style="font-weight: bold;">創世兵器 / 終極武器（Ultima Weapon）</a><br>
+                <a>　　</a>克勞德曾使用過的最強之劍，劍身中心有著藍色的漸層，護手處有四根突棒。但最後下落不明，也從未再次出現。<br>
+            </p>
+            <h2>外表和性格</h2>
+            <p>
+                <a>　</a>特徵是金色的刺蝟頭，瞳孔為青色，身材精瘦肌肉結實。身穿無袖暗紫色高領上衣，左肩裝備護甲。<br>
+                <a>　</a>正如其在作品中的口頭禪「沒興趣哪（興味ないね）」所示，克勞德常被認為是冷淡的個性，<br>
+                <a>　</a>但實際上卻是怕羞而重視夥伴的性格討厭青蛙、容易坐車暈車坐船暈船、不會做菜。<br>
+		</div>
+        </div>
+	</div>
+	<script>
+		function showCharacterIntro(characterId) {
+		var characterElement = document.getElementById(characterId);
+		if (characterElement.style.display === "none") {
+			characterElement.style.display = "flex";
+		} else {
+			characterElement.style.display = "none";
+		}
+		}
+	</script>
+</body>
+</html>
