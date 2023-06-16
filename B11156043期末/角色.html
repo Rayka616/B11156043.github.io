@@ -80,7 +80,7 @@
     }
 
     #menu li {
-    margin-right: 160px;
+    margin-right: 90px;
     }
 
     #menu li:last-child {
@@ -151,6 +151,28 @@
         height: 1300px;
         width: 1200px;
     }
+    #character3 img{
+        height: 1300px;
+        width: 250px;
+    }
+    #character4 img{
+        height: 1300px;
+        width: 1000px;
+    }
+    .scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    }
 	</style>
 </head>
 <body>
@@ -180,17 +202,23 @@
 		<h3>克勞德·斯特萊夫</h3>
 		</div>
 
-        <div class="character" onclick="showCharacterIntro('character2')">
-        <a href="#cl">
-            <img src="cloud.jpg" alt="Character 2">
+        <div class="character" onclick="showCharacterIntro('character3')">
+        <a href="#al">
+            <img src="alice.jpg" alt="Character 3">
         </a>
         <h3>艾莉絲·蓋恩茲博羅</h3>
         </div>
 	
+        <div class="character" onclick="showCharacterIntro('character4')">
+            <a href="#sf">
+                <img src="sf2.jpg" alt="Character 4">
+            </a>
+            <h3>賽菲羅斯</h3>
+            </div>
 		<!-- Add more character elements as needed -->
 	</div>
 	<div id="character1" style="display: none;">
-		<img src="zack3.png" alt="Character 1">
+		<img src="zack3.png" alt="Character 1" style="padding-top:5%;">
 		<div id="character-info">
 		<div class="box" id="zack">
 		<h1>扎克斯·菲爾</h1>
@@ -235,7 +263,7 @@
 	</div>
 	
     <div id="character2" style="display: none;">
-		<img src="cloud2.png" alt="Character 2">
+		<img src="cloud2.png" alt="Character 2"style="padding-top:5%;">
 		<div id="character-info">
 		<div class="box" id="cl">
             <h1>克勞德·斯特萊夫</h1>
@@ -282,6 +310,92 @@
 		</div>
         </div>
 	</div>
+
+    <div id="character3" style="display: none;">
+		<img src="alice2.png" alt="Character 3"  style="padding-left: 20%;">
+		<div id="character-info">
+		<div class="box" id="al">
+            <h1>艾莉絲·蓋恩茲博羅</h1>
+            <h1>エアリス·ゲインズブール</h1>
+            <a style="color: rgba(16, 27, 134, 0.473);font-size: 0.75cm;">
+                一開始我就覺得你們一模一樣。完全是兩個不同的人，看起來卻一模一樣。走路的方式，手勢……從你身上我看到了他……。但是，不一樣，不一樣……</a><br>
+            <a style="font-size: 0.55cm;color: rgba(16, 27, 134, 0.473)">
+                最初から、あなた方はまったく同じように思えました。まったく異なる二人の人ですが、見た目はまったく同じです。歩き方、ジェスチャー...彼をあなたから感じます。しかし、違います、違います...。</a>
+            
+            </a>
+            <h2>基本資料</h2>
+            <p>
+                身高：163cm<br>
+                年齡：16歲(核心危機)、22歲(最終幻想VII)<br>
+                生日：2月7日<br>
+                出生地區：雪原村<br>
+                人種：古代種(賽特拉)<br>
+            </p>
+            <h2>簡介</h2>
+            <p>
+                <a>　　　</a>在前傳遊戲《Final Fantasy VII 核心危機》中。16歲時，她遇到札克斯，在<br>
+                <a>　</a>他逗留在貧民窟教堂期間，艾莉絲和札克斯建立了友達以上，戀人未滿的關係。<br>
+                <a>　</a>艾莉絲是從事古代種研究的加斯特博士和最後純血古代種伊法爾娜所生的混血兒。<br>
+            </p>
+            <h2>武器</h2>
+            <p>
+                <a style="font-weight: bold;">長杖</a><br>
+            </p>
+            <h2>外表和性格</h2>
+            <p>
+                <a>　</a>有一雙綠色的眼睛，一頭棕色的長髮，用一條粉紅色的緞帶扎的辮子。<br>
+                <a>　</a>她穿著粉紅色的長裙，波蕾若式開襟短夾克和棕色徒步靴。<br>
+                <a>　</a>她深知自己是古代種的血脈，所以她總是以一種積極樂觀的態度頑強的去生存。<br>
+                <a>　</a>最後她的靈魂在天空中展現出的笑容，正是因為她的心裏始終對人類充滿希望。<br>
+		</div>
+        </div>
+	</div>
+
+    <div id="character4" style="display: none;">
+		<img src="sf.png" alt="Character 4">
+		<div id="character-info">
+		<div class="box" id="sf">
+            <h1>賽菲羅斯</h1>
+            <h1>クラウド・ストライフ</h1>
+            <a style="color: rgba(16, 27, 134, 0.473);font-size: 0.75cm;">
+            我，是不會成為回憶的</a><br>
+            <a style="font-size: 0.55cm;color: rgba(16, 27, 134, 0.473)">
+                私は、思い出にはならない存在です。</a>
+            
+            </a>
+            <h2>基本資料</h2>
+            <p>
+                身高：196.6cm<br>
+                年齡：大約20-23(核心危機)、大約27-30(最終幻想VII)<br>
+                生日：不明<br>
+                出生地區：不明<br>
+                神羅兵等級：1st Class(最強)<br>
+            </p>
+            <h2>簡介</h2>
+            <p>
+                <a>　　　</a>在前傳與本傳中，擔任很重要的反派角色。<br>
+                <a>　</a>薩菲羅斯在尼布爾海姆執行調查魔晄爐的任務，在親眼見到被魔晄浸泡的人類後開始對自己的身世抱有疑問。<br>
+                <a>　</a>之後他查閲了大量的文獻資料，終於明白自己並非人類的後代，而是傑諾瓦（Jenova）計劃的產物。<br>
+                <a>　</a>由於文獻資料有誤，他將傑諾瓦（Jenova）和古代種賽特拉誤認為同一種生物。<br>
+                <a>　</a>他開始憎恨人類，誓要將本來屬於古代種的星球從人類的手中奪回來。<br>
+                <a>　</a>因為“英雄”的身份而受到大眾歡迎，成為一些少年憧憬的對象。<br>
+                <a>　</a>少年時的克勞德與扎克斯就是以他為目標加入神羅成為“神羅特種部隊”的一員。<br>
+            </p>
+            <h2>武器</h2>
+            <p>
+                <a style="font-weight: bold;">正宗（Masamune）</a><br>
+                <a>　　</a>是一把比身高還要長的超長武士刀，其銳度相當驚人，可施展攻擊範圍很廣的斬擊。<br>
+                <a>　　</a>連巨大的建築物都能輕易斬斷。劇中賽菲羅斯能僅靠單手就將它揮舞自如。<br>
+            </p>
+            <h2>外表和性格</h2>
+            <p>
+                <a>　</a>身材高大強壯，左撇子，特徵是銀白色的長髮，青藍色雙眼，稍尖的瞳孔。<br>
+                <a>　</a>穿着全黑色的排扣大衣和銀色的肩甲，胸口有黑色的十字型束帶。<br>
+                <a>　</a>性格冷靜、勇敢、擁有強大的意志及責任感，不討厭困難的任務，會率先把敵人殲滅，是甚有人情味的人。<br>
+                <a>　</a>但在尼布爾海姆事件後變成反派，攻擊性強，純粹享受戰鬥的樂趣。<br>
+		</div>
+        </div>
+	</div>
 	<script>
 		function showCharacterIntro(characterId) {
 		var characterElement = document.getElementById(characterId);
@@ -291,6 +405,10 @@
 			characterElement.style.display = "none";
 		}
 		}
+        function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 	</script>
+    <button onclick="scrollToTop()" class="scroll-button">回到最上方</button>
 </body>
 </html>
