@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>核心危機 -Final Fantasy VII</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<style> 
+    header .navbar{
+                color: black;
+                font-size: 24px;
+                padding-left: 45px;
+                padding-right: 45px;
+                text-decoration: none;
+                align-items: center;
+            }
+    header .navbar a:hover{
+                color: black;
+                font-size: 28px;
+                margin-left: 10px;
+                transform: 2s;
+                background-color: gray;
+                padding: 15px 10px 15px 10px;
+            }
+    #menu-bar{
+            font-size: 25px;
+            cursor: pointer;
+            color: #7b7c7a;
+            border: 1px solid #7b7c7a;
+            border-radius: 5px;
+            padding: 8px;
+            display: none;
+            }
+    @media(max-width:600px){
+            #menu-bar{
+                display: initial;
+                position: absolute;
+                right: 10px;
+                top:20px;
+            }
+            header .navbar{
+                position: absolute;
+                top: 70px;left: 0;right: 0;
+                background-color: rgb(211, 211, 115);
+                border-top: 3px solid gray;
+                clip-path:polygon(0 0,100% 0,100% 0,0 0);
+            }
+            header .navbar.active{
+                clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+                padding: 10px;
+            }
+            header .navbar a{
+                display: block;
+                font-size: 24px;
+                font-weight: normal;
+                margin: 10px; padding: 6px;
+                color: #c09002;
+                border-left: 3px solid gray;
+            }
+            body {
+            background-color: #f2f2f2;
+            background-image: url("./back.jpg"); /* 替換成您的背景圖片檔案路徑 */
+            width: 800px;
+            height: 1000px;
+            overflow: hidden;
+            }
+            html{
+              height: 100%;
+            }
+        }
+		body {
+    background-color: #f2f2f2;
+    background-image: url("./back.jpg"); /* 替換成您的背景圖片檔案路徑 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    }
+    #menu {
+    background-color: rgba(51, 51, 51, 0.6);
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 微軟正黑體;
+    }
+    #menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    }
+
+    #menu li {
+    margin-right: 90px;
+    }
+
+    #menu li:last-child {
+    margin-right: 0;
+    }
+
+    #menu a {
+    color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+  }
+	</style>
+</head>
+<body>
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <script src="script.js"></script>
+      <nav id="menu" class="navbar">
+        <ul>
+        <li><a href="#index">首頁</a></li>
+        <li><a href="劇情.html">劇情簡介</a></li>
+        <li><a href="角色.html">主要角色介紹</a></li>
+        </ul>
+      </nav>
+  </header>
+	
+</body>
+</html>
